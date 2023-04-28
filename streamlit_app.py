@@ -14,15 +14,6 @@ with st.expander("About this App"):
      """)
 
 
-st.markdown("Before diving into the code section, you need to **install Streamlit** in your Repl.")
-with st.expander("Follow these steps below 👇"):
-    st.write("""1. Create a new repl with Python.
-              \n2. Go to **Shell** section and type --- `$ pip install streamlit`. It will take few minutes to install.
-              \n3. Then check if streamlit is installed by typing --- `$ streamlit --version`.
-              \n4. Add a new file in your repl and name it `requirements.txt`. Now, inside this file, add `streamlit==[write version here!]`
-              \n5. You can now write code inside `main.py` file and save it.
-              \n6. Lastly, go to **Shell** again, and type --- `$ streamlit run main.py`. Your code will be visible in a *Firefox Bowser!* 🎉
-              """)
 
 #################################################################################################
 # Sidebar section ---
