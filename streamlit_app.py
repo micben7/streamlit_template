@@ -17,7 +17,7 @@ with st.expander("About this App"):
 #################################################################################################
 # Sidebar section ---
 with st.sidebar:
-    st.header("Streamlit Elements Corner✨")
+    st.header("Price Insight App✨")
     select = st.selectbox("Explore Categories 👀", ["", "Livestock","Horticulture", "Grain", "Media 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
@@ -239,9 +239,6 @@ elif select == 'Layouts & Containers' :
 
     tab1, tab2 = st.tabs(["Voila!", "Funny"])
     
-    with tab1:
-        st.header("WOW!!")
-        st.image("https://i.gifer.com/DJR3.gif", width=400)
 
     with tab2:
         st.header("Funny! 😆")
