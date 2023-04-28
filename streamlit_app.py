@@ -9,8 +9,7 @@ from PIL import Image
 st.title('Welcome to Our Streamlit App! 🎈')
 with st.expander("About this App"):
      st.write("""
-         This app will introduce you to the Streamlit Library which
-         helps to build and deploy data driven web apps with ease using Python. 😉
+         This web application leverages this data to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
      """)
 
 
