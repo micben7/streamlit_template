@@ -17,7 +17,7 @@ with st.expander("About this App"):
 #################################################################################################
 # Sidebar section ---
 with st.sidebar:
-    st.header("Streamlit Elements Corner ✨")
+    st.header("Streamlit Elements Corner✨")
     select = st.selectbox("Explore Categories 👀", ["", "Livestock","Horticulture", "Grain", "Media 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
@@ -123,7 +123,7 @@ elif select == 'Horticulture':
 
 ################################################################################################
 # Input data display section --->
-elif select == 'Grain':
+elif select == 'Grains':
     st.header('Lots of awesome widgets! 🤯')
 
     # Part of Streamlit's "Layouts and Containers" Section
