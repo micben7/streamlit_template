@@ -18,7 +18,7 @@ with st.expander("About this App"):
 # Sidebar section ---
 with st.sidebar:
     st.header("Price Insight App✨")
-    select = st.selectbox("Explore Categories 👀", ["", "Livestock","Horticulture", "Grain","About Us", "Media 📷", "Layouts & Containers"])
+    select = st.selectbox("Explore Categories 👀", ["", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
         st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
@@ -220,7 +220,7 @@ elif select == 'About Us':
         st.write('')
 ################################################################################################
 # Media display section --->
-elif select == 'Media 📷':
+elif select == 'Ratings 📷':
     st.header('You can embed Images, Videos & Audio files all at one place! 😉')
     st.subheader('st.image')
 
