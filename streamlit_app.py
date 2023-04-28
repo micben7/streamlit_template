@@ -18,7 +18,7 @@ with st.expander("About this App"):
 # Sidebar section ---
 with st.sidebar:
     st.header("Streamlit Elements Corner ✨")
-    select = st.selectbox("Explore any element 👀", ["", "Data and Chart displays","Text Elements", "Input data", "Media 📷", "Layouts & Containers"])
+    select = st.selectbox("Explore Categories 👀", ["", "Data and Chart displays","Text Elements", "Input data", "Media 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
         st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
@@ -31,7 +31,7 @@ with st.sidebar:
 
 ################################################################################################
 # Data and Charts elements section --->
-if select == 'Data and Chart displays':
+if select == 'Livestock':
     st.header('st.dataframe')
     st.write('Dataframes as an interactive table')
     # generates random numeric values!
@@ -99,7 +99,7 @@ if select == 'Data and Chart displays':
 
 ################################################################################################
 # Text display section --->
-elif select == 'Text Elements':
+elif select == 'Horticulture':
     st.header('Snippets of Different Types of Texts')
     choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
     
@@ -123,7 +123,7 @@ elif select == 'Text Elements':
 
 ################################################################################################
 # Input data display section --->
-elif select == 'Input data':
+elif select == 'Grain':
     st.header('Lots of awesome widgets! 🤯')
 
     # Part of Streamlit's "Layouts and Containers" Section
