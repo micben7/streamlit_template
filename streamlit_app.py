@@ -18,7 +18,7 @@ with st.expander("About this App"):
 # Sidebar section ---
 with st.sidebar:
     st.header("Streamlit Elements Corner ✨")
-    select = st.selectbox("Explore Categories 👀", ["", "Data and Chart displays","Text Elements", "Input data", "Media 📷", "Layouts & Containers"])
+    select = st.selectbox("Explore Categories 👀", ["", "Livestock","Horticulture", "Grain", "Media 📷", "Layouts & Containers"])
     
     if st.button('Streamlit Challenge 🏁'):
         st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
