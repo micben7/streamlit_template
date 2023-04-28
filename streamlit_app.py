@@ -6,7 +6,7 @@ import altair as alt
 from vega_datasets import data
 from PIL import Image
 
-st.title('Welcome to the Streamlit Tour! 🎈')
+st.title('Welcome to Our Streamlit App! 🎈')
 with st.expander("About this App"):
      st.write("""
          This app will introduce you to the Streamlit Library which
