@@ -28,29 +28,7 @@ with st.sidebar:
     else:
         st.write('If you\'re interested to learn more, then you should definitely try the above *Challenge!* 👆')
 
-################################################################################################
-# Text display section --->
-elif select == 'About Us':
-    st.header('Snippets of Different Types of Texts')
-    choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
-    
-    if choice == 'Simple':
-        st.write('st.write --> This is an example of simple text')
-    elif choice == 'Markdown':
-        st.markdown("st.markdown --> *example* of **markdown text**")
-    elif choice == 'Subheader':
-        st.subheader('st.subheader --> for writing subheadings!')
-    elif choice == 'Code':
-        st.write('st.code example 👇')
-        st.code("console.log('Hello World');")
-    elif choice == 'LaTex':
-        st.write('st.latex --> You can also write Math equations here! 🤓')
-        st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-    elif choice == 'Caption':
-        st.write('st.caption -->')
-        st.caption('This is a caption!')
-    else:
-        st.write('')
+
 
 ################################################################################################
 # Data and Charts elements section --->
@@ -217,6 +195,29 @@ elif select == 'Grains':
           
     st.markdown('🌟 You can try out with more widgets [here](https://docs.streamlit.io/library/api-reference/widgets)')
 
+################################################################################################
+# Text display section --->
+elif select == 'About Us':
+    st.header('Snippets of Different Types of Texts')
+    choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
+    
+    if choice == 'Simple':
+        st.write('st.write --> This is an example of simple text')
+    elif choice == 'Markdown':
+        st.markdown("st.markdown --> *example* of **markdown text**")
+    elif choice == 'Subheader':
+        st.subheader('st.subheader --> for writing subheadings!')
+    elif choice == 'Code':
+        st.write('st.code example 👇')
+        st.code("console.log('Hello World');")
+    elif choice == 'LaTex':
+        st.write('st.latex --> You can also write Math equations here! 🤓')
+        st.latex("(a + b)^2 = a^2 + 2ab + b^2")
+    elif choice == 'Caption':
+        st.write('st.caption -->')
+        st.caption('This is a caption!')
+    else:
+        st.write('')
 ################################################################################################
 # Media display section --->
 elif select == 'Media 📷':
