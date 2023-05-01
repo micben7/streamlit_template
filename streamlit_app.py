@@ -6,7 +6,7 @@ import altair as alt
 from vega_datasets import data
 from PIL import Image
 
-st.title('Welcome to Our Streamlit App! 🎈')
+st.title('Welcome to Alltech Inc. App! 🎈')
 with st.expander("About this App"):
      st.write("""
          This web application leverages this data to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
@@ -216,6 +216,19 @@ elif select == 'About Us':
     elif choice == 'Caption':
         st.write('st.caption -->')
         st.caption('This is a caption!')
+
+
+ c1, c2 = st.columns(2)
+    with c1:
+        st.image('https://blog.streamlit.io/content/images/size/w2000/2022/03/snowflake_streamlit-1.gif', width=300)
+        st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
+    with c2:
+        st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
+        st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
+    st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')
+
+
+
     else:
         st.write('')
 ################################################################################################
