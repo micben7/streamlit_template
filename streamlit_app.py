@@ -216,7 +216,9 @@ elif select == 'About Us':
     elif choice == 'Caption':
         st.write('st.caption -->')
         st.caption('This is a caption!')
-
+        
+    else:
+        st.write('')
 
     c1, c2 = st.columns(2)
     with c1:
@@ -225,12 +227,7 @@ elif select == 'About Us':
     with c2:
         st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
         st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
-    st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')
-
-
-
-    else:
-        st.write('')
+    st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
 ################################################################################################
 # Media display section --->
 elif select == 'Ratings 📷':
