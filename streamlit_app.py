@@ -218,7 +218,7 @@ elif select == 'About Us':
         st.caption('This is a caption!')
 
 
- c1, c2 = st.columns(2)
+    c1, c2 = st.columns(2)
     with c1:
         st.image('https://blog.streamlit.io/content/images/size/w2000/2022/03/snowflake_streamlit-1.gif', width=300)
         st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
