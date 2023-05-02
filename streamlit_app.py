@@ -225,6 +225,7 @@ elif select == 'About Us':
         st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Bukola.PNG', width=3000)
         st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
     with c2:
+        st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
         st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
         st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
     st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
