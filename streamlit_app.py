@@ -149,7 +149,7 @@ elif select == 'Grains':
 elif select == 'About Us':
     st.header('About Us')
   
-     
+    st.write("testing text")
 
     c1, c2 = st.columns(2)
     with c1:
