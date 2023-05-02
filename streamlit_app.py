@@ -45,40 +45,8 @@ if select == 'Livestock':
      
 
     st.header('Displaying Some Charts 📊')
-    st.subheader('st.altair_chart')
-    st.write('A choropleth map of unemployment rate per county in the US')
-    
-    # example taken from altair docs gallery page
-    counties = alt.topo_feature(data.us_10m.url, 'counties')  
-    source = data.unemployment.url
-    
-    ch = alt.Chart(counties).mark_geoshape().encode(
-        color='rate:Q'
-        ).transform_lookup(
-            lookup='id',
-            from_=alt.LookupData(source, 'id', ['rate'])
-        ).project(
-            type='albersUsa'
-        ).properties(
-            width=500,
-            height=300
-        )
-    st.altair_chart(ch, use_container_width=True)
-    st.caption('📍 Note : You need to install `altair` library to plot the above map!')
-
-    st.subheader('st.bar_chart')
-    chart_data_2 = pd.DataFrame(
-    np.random.randn(50, 3),
-    columns=["a", "b", "c"])
-    st.bar_chart(chart_data_2)
-    st.caption('Above is a Bar Chart')
-
-    st.write("""🌟 There are many more library options you can use for data visualization, such as -- 
-                 \n - matplotlib
-                 \n - Bokeh
-                 \n - Vega-Lite
-                 \n - Plotly, etc.. for displaying charts!
-                 """)
+     
+             
 
 ################################################################################################
 # Text display section --->
