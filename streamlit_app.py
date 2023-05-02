@@ -208,33 +208,4 @@ elif select == 'Ratings 📷':
              \n- *Downloaded from* -- https://www.videvo.net/royalty-free-music/sort/popular/instrument/flute/""")
 
 
-################################################################################################
-# Layouts & Containers section --->
-elif select == 'Layouts & Containers' : 
-    st.header('Take control of elements to be laid out on the screen!')
-    
-    st.subheader('st.sidebar')
-    st.write('👈 *Sidebar is already present in the left side of the app!*')
-     
-    st.subheader('st.columns')
-    st.write('*Input Data section is displayed using columns.*')
-
-    st.subheader('st.tabs')
-    st.write('*One of the newly launched cool feature for inserting multiple elements into containers as TABS!*')
-
-    tab1, tab2 = st.tabs(["Voila!", "Funny"])
-    
-
-    with tab2:
-        st.header("Funny! 😆")
-        st.image("https://res.cloudinary.com/dougsillars/image/upload/v1546606222/shaq_mtl6do.gif", width=400)
-
-    st.write('You are free to add as many tabs you wish!')
-
-    st.subheader('st.expander')
-    with st.expander("CLICK ME to expand!"):
-     st.write('This is an example of **Expander, that you can use to hold multiple elements for expanding it or to collapse it!**')
-
-    st.subheader('And that\'s a wrap!🎉 Hope you learnt a lot from this tour and had fun as well! 😊')
-else:
-    st.write('') # left blank if nothing is selected!
+  
