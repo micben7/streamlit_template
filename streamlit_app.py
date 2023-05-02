@@ -33,7 +33,7 @@ with st.sidebar:
 ################################################################################################
 # Data and Charts elements section --->
 if select == 'Livestock':
-    st.header('st.dataframe')
+    st.header('Insights from Livestock Dataset')
     st.write('Insights from Livestock Dataset')
     # generates random numeric values!
     df = pd.DataFrame(
