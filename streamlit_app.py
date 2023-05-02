@@ -51,16 +51,6 @@ if select == 'Livestock':
     col3.metric("Humidity", "86%", "4%")
 
 
-    st.header('st.json : The object to print as JSON')
-    st.json({
-     'foo': 'bar',
-     'baz': 'boz',
-     'fruits': [
-         'apple',
-         'watermelon',
-         'peach',
-     ],
-     })
 
     st.header('Displaying Some Charts 📊')
     st.subheader('st.altair_chart')
