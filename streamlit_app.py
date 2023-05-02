@@ -13,7 +13,6 @@ with st.expander("About this App"):
      """)
 
 
-
 #################################################################################################
 # Sidebar section ---
 with st.sidebar:
@@ -28,6 +27,7 @@ with st.sidebar:
     else:
         st.write('If you\'re interested to learn more, then you should definitely try the above *Challenge!* 👆')
 
+st.button('Streamlit Challenge 🏁')
 
 
 ################################################################################################
