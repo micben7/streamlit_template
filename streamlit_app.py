@@ -51,7 +51,7 @@ if select == 'Livestock':
 ################################################################################################
 # Text display section --->
 elif select == 'Horticulture':
-    st.header('Snippets of Different Types of Texts')
+    st.header('Insight from Horticulture Dataset')
     choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
     
     if choice == 'Simple':
@@ -75,7 +75,7 @@ elif select == 'Horticulture':
 ################################################################################################
 # Input data display section --->
 elif select == 'Grains':
-    st.header('Lots of awesome widgets! 🤯')
+    st.header('Insight From Grain Dataset')
 
     # Part of Streamlit's "Layouts and Containers" Section
     col1, col2, col3 = st.columns([5, 5, 5], gap="medium") 
