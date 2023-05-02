@@ -222,7 +222,7 @@ elif select == 'About Us':
 
     c1, c2 = st.columns(2)
     with c1:
-    
+        st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Bukola.png', width=300)
         st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
     with c2:
         st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
