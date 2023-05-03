@@ -154,7 +154,7 @@ elif select == 'About Us':
 
     c1, c2 = st.columns(2)
     with c1:
-        st.image('Users\Admin\Documents\GitHub\streamlit_template\pics.PNG', width=3000)
+        st.image('streamlit_template\pics.PNG', width=3000)
       ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
     ##with c2:
     #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
