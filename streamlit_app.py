@@ -151,17 +151,14 @@ elif select == 'About Us':
     st.write("Alltech Inc. is an International company with headquarters in Nigeria and branches in South Africa,Kenya and Uk.")
     st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
     st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
-
-    c1, c2 = st.columns(2)
-    with c1:
-        img=image.open('streamlit_template\pics.PNG')
-        st.image('img', width=3000)
+    img=image.open('streamlit_template\pics.Chisom.PNG')
+    st.image(img)
       ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
     ##with c2:
     #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
      #   st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
      #   st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
-# st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
+ ##st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
 ################################################################################################
 # Media display section --->
 elif select == 'Ratings 📷':
