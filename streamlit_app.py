@@ -16,6 +16,8 @@ with st.expander("About this App"):
 #################################################################################################
 # Sidebar section ---
 with st.sidebar:
+    logo = Image.open("streamlit/pics/Alltech logo.PNG")
+    st.image(logo, width=200)
     st.header("Price Insight App✨")
     select = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
     
