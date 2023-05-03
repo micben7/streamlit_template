@@ -10,6 +10,10 @@ from PIL import Image
 def main():
     
     st.title('Alltech Inc.🎈') 
+    logo = Image.open('STREAM_TEMPLATE/pics/Bukola.PNG')
+    st.image(logo)
+
+
     with st.expander("About this App"):
         st.write("""
             This web application leverages this data to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
