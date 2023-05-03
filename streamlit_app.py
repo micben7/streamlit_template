@@ -148,9 +148,6 @@ elif select == 'Grains':
 # Text display section --->
 elif select == 'About Us':
     st.header('About Us')
-    cst.write("Select any type of Text")
-    
-     
 
     c1, c2 = st.columns(2)
     with c1:
