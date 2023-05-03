@@ -10,9 +10,8 @@ from PIL import Image
 def main():
     
     st.title('Alltech Inc.🎈') 
-    logo = Image.open('STREAM_TEMPLATE/pics/Bukola.PNG')
+    logo = Image.open('STREAMLIT_TEMPLATE/pics/Bukola.PNG')
     st.image(logo)
-
 
     with st.expander("About this App"):
         st.write("""
