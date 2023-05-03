@@ -159,7 +159,7 @@ def main():
         st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
         st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
         
-        st.image(Image.open("pics/Bukola.PNG", width=200))
+        st.Image.open("pics/Bukola.PNG", width=200)
         ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
         ##with c2:
         #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
