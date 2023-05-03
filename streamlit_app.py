@@ -152,9 +152,9 @@ elif select == 'About Us':
     st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
     st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
 
-    ##c1, c2 = st.columns(2)
-   ## with c1:
-     ##   st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Bukola.PNG', width=3000)
+    c1, c2 = st.columns(2)
+    with c1:
+        st.image('Users\Admin\Documents\GitHub\streamlit_template\pics.PNG', width=3000)
       ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
     ##with c2:
     #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
