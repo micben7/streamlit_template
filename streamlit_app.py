@@ -6,7 +6,7 @@ import altair as alt
 from vega_datasets import data
 from PIL import Image
 
-st.title('Welcome to Alltech Inc. App! 🎈')
+st.title('Alltech Inc.🎈')
 with st.expander("About this App"):
      st.write("""
          This web application leverages this data to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
