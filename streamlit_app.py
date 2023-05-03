@@ -148,7 +148,7 @@ elif select == 'Grains':
 # Text display section --->
 elif select == 'About Us':
     st.header('About Us')
-    st.write("Alltech Inc. is an International company with headquarters in Nigeria and with branches in South Africa,Kenya and Uk.")
+    st.write("Alltech Inc. is an International company with headquarters in Nigeria and branches in South Africa,Kenya and Uk.")
     st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
     st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
 
