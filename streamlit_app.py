@@ -8,6 +8,8 @@ from PIL import Image
 
 
 def main():
+    logo = Image.open("streamlit/pics/Chisom.PNG")
+    st.sidebar.image(logo, width=200)
     st.title('Alltech Inc.🎈') 
     with st.expander("About this App"):
         st.write("""
