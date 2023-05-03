@@ -21,7 +21,7 @@ def main():
     #################################################################################################
     # Sidebar section ---
     with st.sidebar:
-        logo = Image.open("PICs/Alltech_logo.png")
+        logo = Image.open("pics/Alltech_logo.png")
         st.sidebar.image(logo, width=200)
         st.header("Price Insight App✨")
         select = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
