@@ -148,7 +148,7 @@ elif select == 'Grains':
 # Text display section --->
 elif select == 'About Us':
     st.header('About Us')
-    st.write("Alltech Inc. is an International company that It’s headquarters in Nigeria")
+    st.write("Alltech Inc. is an International company that It’s headquarters in Nigeria,with branches in South Africa,Kenya and Uk.")
     ##c1, c2 = st.columns(2)
    ## with c1:
      ##   st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Bukola.PNG', width=3000)
