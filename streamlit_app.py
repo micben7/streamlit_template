@@ -158,7 +158,7 @@ def main():
         st.write("Alltech Inc. is an International company with headquarters in Nigeria and branches in South Africa,Kenya and Uk.")
         st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
         st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
-        r1, r2 = st.row(2)
+        r1, r2 = st.rows(2)
         with r1:
             logo = Image.open("pics/Bukola.PNG")
             st.image(logo, width=150)
