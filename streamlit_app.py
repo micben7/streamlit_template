@@ -158,20 +158,22 @@ def main():
         st.write("Alltech Inc. is an International company with headquarters in Nigeria and branches in South Africa,Kenya and Uk.")
         st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
         st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
-        
-        logo = Image.open("pics/Bukola.PNG")
-        st.image(logo, width=100)
-        logo = Image.open("pics/Praise.PNG")
-        st.image(logo, width=200)
-        logo = Image.open("pics/Chisom.PNG")
-        st.image(logo, width=200)
-        logo = Image.open("pics/Michael.PNG")
-        st.image(logo, width=200)
-        logo = Image.open("pics/Simon.PNG")
-        st.image(logo, width=200)
-        logo = Image.open("pics/Mbusela.PNG")
-        st.image(logo, width=200)
-        
+        r1, r2 = st.row(2)
+        with r1:
+            logo = Image.open("pics/Bukola.PNG")
+            st.image(logo, width=150)
+            logo = Image.open("pics/Praise.PNG")
+            st.image(logo, width=150)
+            logo = Image.open("pics/Chisom.PNG")
+            st.image(logo, width=150)
+        with r2:    
+            logo = Image.open("pics/Michael.PNG")
+            st.image(logo, width=150)
+            logo = Image.open("pics/Simon.PNG")
+            st.image(logo, width=150)
+            logo = Image.open("pics/Mbusela.PNG")
+            st.image(logo, width=150)
+            
         ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
         ##with c2:
         #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
