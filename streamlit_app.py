@@ -161,6 +161,17 @@ def main():
         
         logo = Image.open("pics/Bukola.PNG")
         st.image(logo, width=200)
+        logo = Image.open("pics/Praise.PNG")
+        st.image(logo, width=200)
+        logo = Image.open("pics/Chisom.PNG")
+        st.image(logo, width=200)
+        logo = Image.open("pics/Michael.PNG")
+        st.image(logo, width=200)
+        logo = Image.open("pics/Simon.PNG")
+        st.image(logo, width=200)
+        logo = Image.open("pics/Mbusela.PNG")
+        st.image(logo, width=200)
+        
         ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
         ##with c2:
         #    st.image('https://github.com/Explore-AI/internship-project-2207-09/tree/main/streaamlit/pics/Chisom.PNG', width=200)
