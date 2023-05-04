@@ -160,7 +160,7 @@ def main():
         st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
         
         logo = Image.open("pics/Bukola.PNG")
-        st.image(logo, width=200)
+        st.image(logo, width=100)
         logo = Image.open("pics/Praise.PNG")
         st.image(logo, width=200)
         logo = Image.open("pics/Chisom.PNG")
