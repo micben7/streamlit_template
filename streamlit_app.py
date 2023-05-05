@@ -162,7 +162,7 @@ def main():
         c1, c2, c3 = st.columns(3)
         with c1:
             logo = Image.open("pics/Bukola.PNG")
-            st.image(logo, width=150, title = "Bukola")
+            st.image(logo, width=150)
             logo = Image.open("pics/Praise.PNG")
             st.image(logo, width=150)
         with c2:     
