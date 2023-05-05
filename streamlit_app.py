@@ -32,7 +32,7 @@ def main():
                         \n1. [French](https://30days-in-french.streamlitapp.com/) by [Charly Wargnier](https://twitter.com/DataChaz)
                         \n2. [Portuguese](https://share.streamlit.io/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)""")
         else:
-            st.write('Bringing you the ')
+            st.write('Bringing you the best of insights')
 
     
 
