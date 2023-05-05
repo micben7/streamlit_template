@@ -26,12 +26,9 @@ def main():
         st.header("Price Insight App✨")
         select = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
         
-        if st.button('Streamlit Challenge 🏁'):
-            st.markdown("""**CHALLENGE TRANSLATIONS**
-                        \n1. [French](https://30days-in-french.streamlitapp.com/) by [Charly Wargnier](https://twitter.com/DataChaz)
-                        \n2. [Portuguese](https://share.streamlit.io/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)""")
-        else:
-            st.write('Bringing you the best of insights')
+         
+    
+        st.write('Bringing you the best of insights')
 
     
 
