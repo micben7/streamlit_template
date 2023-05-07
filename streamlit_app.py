@@ -160,8 +160,11 @@ def main():
             logo = Image.open("pics/Bukola.PNG")
             st.image(logo, width=150)
             st.write("Bukola")
+            st.write("data Engineer")
             logo = Image.open("pics/Praise.PNG")
             st.image(logo, width=150)
+            st.write("Praie")
+            st.write("data Engineer")
         with c2:     
             logo = Image.open("pics/Chisom.PNG")
             st.image(logo, width=150)
