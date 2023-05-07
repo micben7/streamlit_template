@@ -54,7 +54,7 @@ def main():
     # Text display section --->
     elif select == 'Horticulture':
         st.header('Insight from Horticulture Dataset')
-        choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
+        choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
         if choice == 'Simple':
             st.write('This is an example of simple text')
@@ -74,9 +74,9 @@ def main():
         else:
             st.write('')
             
-        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
-        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Period  👀", ["Home", "Livestock","Horticulture","About Us""])
 
 
     ################################################################################################
