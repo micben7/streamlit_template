@@ -73,8 +73,8 @@ def main():
             st.caption('This is a caption!')
         else:
             st.write('')
-
-        select_1 = st.selectbox( ["Home", "Livestock","Horticulture", "Grain", "Ratings 📷"])
+            
+        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
     
 
     ################################################################################################
