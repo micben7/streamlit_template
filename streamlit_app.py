@@ -73,46 +73,12 @@ def main():
             st.caption('This is a caption!')
         else:
             st.write('')
-
-        choice1 = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
-        
-        if choice1 == 'Simple':
-            st.write('st.write --> This is an example of simple text')
-        elif choice1 == 'Markdown':
-            st.markdown("st.markdown --> *example* of **markdown text**")
-        elif choice1 == 'Subheader':
-            st.subheader('st.subheader --> for writing subheadings!')
-        elif choice1 == 'Code':
-            st.write('st.code example 👇')
-            st.code("console.log('Hello World');")
-        elif choice1 == 'LaTex':
-            st.write('st.latex --> You can also write Math equations here! 🤓')
-            st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        elif choice1 == 'Caption':
-            st.write('st.caption -->')
-            st.caption('This is a caption!')
-        else:
-            st.write('')
-
-        choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
-        
-        if choice2 == 'Simple':
-            st.write('st.write --> This is an example of simple text')
-        elif choice2 == 'Markdown':
-            st.markdown("st.markdown --> *example* of **markdown text**")
-        elif choice2 == 'Subheader':
-            st.subheader('st.subheader --> for writing subheadings!')
-        elif choice2 == 'Code':
-            st.write('st.code example 👇')
-            st.code("console.log('Hello World');")
-        elif choice2 == 'LaTex':
-            st.write('st.latex --> You can also write Math equations here! 🤓')
-            st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        elif choice2 == 'Caption':
-            st.write('st.caption -->')
-            st.caption('This is a caption!')
-        else:
-            st.write('')
+        # User-based preferences
+        st.write('### Enter Your Three Favorite Movies')
+        movie_1 = st.selectbox('First Option',title_list[14930:15200])
+        movie_2 = st.selectbox('Second Option',title_list[25055:25255])
+        movie_3 = st.selectbox('Third Option',title_list[21100:21200])
+        fav_movies = [movie_1,movie_2,movie_3]    
 
     ################################################################################################
     # Input data display section --->
