@@ -74,21 +74,21 @@ def main():
         else:
             st.write('')
 
-        choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
+        choice1 = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
-        if choice == 'Simple':
+        if choice1 == 'Simple':
             st.write('st.write --> This is an example of simple text')
-        elif choice == 'Markdown':
+        elif choice1 == 'Markdown':
             st.markdown("st.markdown --> *example* of **markdown text**")
-        elif choice == 'Subheader':
+        elif choice1 == 'Subheader':
             st.subheader('st.subheader --> for writing subheadings!')
-        elif choice == 'Code':
+        elif choice1 == 'Code':
             st.write('st.code example 👇')
             st.code("console.log('Hello World');")
-        elif choice == 'LaTex':
+        elif choice1 == 'LaTex':
             st.write('st.latex --> You can also write Math equations here! 🤓')
             st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        elif choice == 'Caption':
+        elif choice1 == 'Caption':
             st.write('st.caption -->')
             st.caption('This is a caption!')
         else:
@@ -96,19 +96,19 @@ def main():
 
         choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
-        if choice == 'Simple':
+        if choice2 == 'Simple':
             st.write('st.write --> This is an example of simple text')
-        elif choice == 'Markdown':
+        elif choice2 == 'Markdown':
             st.markdown("st.markdown --> *example* of **markdown text**")
-        elif choice == 'Subheader':
+        elif choice2 == 'Subheader':
             st.subheader('st.subheader --> for writing subheadings!')
-        elif choice == 'Code':
+        elif choice2 == 'Code':
             st.write('st.code example 👇')
             st.code("console.log('Hello World');")
-        elif choice == 'LaTex':
+        elif choice2 == 'LaTex':
             st.write('st.latex --> You can also write Math equations here! 🤓')
             st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        elif choice == 'Caption':
+        elif choice2 == 'Caption':
             st.write('st.caption -->')
             st.caption('This is a caption!')
         else:
