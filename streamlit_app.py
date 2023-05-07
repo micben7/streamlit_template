@@ -76,7 +76,7 @@ def main():
             
         select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
-        select_1 = st.selectbox("Select Period  👀", ["Home", "Livestock","Horticulture","About Us""])
+        select_2 = st.selectbox("Select Period  👀", ["Home", "Livestock","Horticulture","About Us""])
 
 
     ################################################################################################
