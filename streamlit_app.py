@@ -57,7 +57,7 @@ def main():
         choice = st.selectbox("Select any type of Text 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
         if choice == 'Simple':
-            st.write('st.write --> This is an example of simple text')
+            st.write('This is an example of simple text')
         elif choice == 'Markdown':
             st.markdown("st.markdown --> *example* of **markdown text**")
         elif choice == 'Subheader':
@@ -75,7 +75,9 @@ def main():
             st.write('')
             
         select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
-    
+
+        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
+
 
     ################################################################################################
     # Input data display section --->
