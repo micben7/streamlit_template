@@ -159,7 +159,7 @@ def main():
         with c1:
             logo = Image.open("pics/Bukola.PNG")
             st.image(logo, width=150)
-            st.write(Bukola)
+            st.write("Bukola")
             logo = Image.open("pics/Praise.PNG")
             st.image(logo, width=150)
         with c2:     
