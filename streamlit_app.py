@@ -74,7 +74,7 @@ def main():
         else:
             st.write('')
 
-        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
+        select_1 = st.selectbox( ["Home", "Livestock","Horticulture", "Grain", "Ratings 📷"])
     
 
     ################################################################################################
