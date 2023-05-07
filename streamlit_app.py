@@ -78,7 +78,8 @@ def main():
         movie_1 = st.selectbox('First Option')
         movie_2 = st.selectbox('Second Option')
         movie_3 = st.selectbox('Third Option')
- 
+        fav_movies = [movie_1,movie_2,movie_3]    
+
     ################################################################################################
     # Input data display section --->
     elif select == 'Grains':
