@@ -73,12 +73,9 @@ def main():
             st.caption('This is a caption!')
         else:
             st.write('')
-        # User-based preferences
-        st.write('### Enter Your Three Favorite Movies')
-        movie_1 = st.selectbox('First Option')
-        movie_2 = st.selectbox('Second Option')
-        movie_3 = st.selectbox('Third Option')
-        fav_movies = [movie_1,movie_2,movie_3]    
+
+        select_1 = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
+    
 
     ################################################################################################
     # Input data display section --->
