@@ -159,22 +159,30 @@ def main():
         with c1:
             logo = Image.open("pics/Bukola.PNG")
             st.image(logo, width=150)
-            st.write("Bukola")
+            st.write("Bukola Badeji")
             st.write("data Engineer")
             logo = Image.open("pics/Praise.PNG")
             st.image(logo, width=150)
-            st.write("Praie")
+            st.write("Praie Taiwo")
             st.write("data Engineer")
         with c2:     
             logo = Image.open("pics/Chisom.PNG")
             st.image(logo, width=150)
+            st.write("Chisom Nwankwo")
+            st.write("Data Scientist")
             logo = Image.open("pics/Michael.PNG")
             st.image(logo, width=150)
+            st.write("Michael Benjamin")
+            st.write("Data Scientist")
         with c3:     
             logo = Image.open("pics/Simon.PNG")
             st.image(logo, width=150)
+            st.write("Simon Nong")
+            st.write("Data Scientist")
             logo = Image.open("pics/Mbusela.PNG")
             st.image(logo, width=150)
+            st.write("Mbuyiselo Mkwanazi")
+            st.write("Data Scientist")
             
         ##  st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
         ##with c2:
