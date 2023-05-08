@@ -6,7 +6,11 @@ import altair as alt
 from vega_datasets import data
 from PIL import Image
 
+from utils.data_loader import load_movie_titles
 
+
+# Data Loading
+title_list = load_movie_titles('Data/movies.csv')
 def main():
     
     st.title('Alltech Inc.🎈') 
@@ -57,7 +61,7 @@ def main():
         choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
         if choice == 'Simple':
-            st.write('This is an example of simple text')
+            st.write('')
         elif choice == 'Markdown':
             st.markdown("st.markdown --> *example* of **markdown text**")
         elif choice == 'Subheader':
@@ -77,7 +81,12 @@ def main():
         select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
         select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
-
+         # User-based preferences
+        st.write('### Enter Your The Favorite Movies')
+        movie_1 = st.selectbox('First Option',title_list[14930:15200])
+        movie_2 = st.selectbox('Second Option',title_list[25055:25255])
+        movie_3 = st.selectbox('Third Option',title_list[21100:21200])
+        fav_movies = [movie_1,movie_2,movie_3]
 
     ################################################################################################
     # Input data display section --->
