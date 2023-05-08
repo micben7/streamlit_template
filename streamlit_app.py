@@ -86,7 +86,7 @@ def main():
         movie_1 = st.selectbox('Select Market',title_list[14930:15200])
         movie_2 = st.selectbox('Select Product',title_list[25055:25255])
         movie_3 = st.selectbox('Select period',title_list[21100:21200])
-        #fav_movies = [movie_1,movie_2,movie_3]
+        fav_movies = [movie_1,movie_2,movie_3]
 
     ################################################################################################
     # Input data display section --->
