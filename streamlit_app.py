@@ -82,7 +82,7 @@ def main():
 
        # select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
          # User-based preferences
-        st.write('###Insight from Horticulture Dataset')
+        st.write('Insight from Horticulture Dataset')
         movie_1 = st.selectbox('First Option',title_list[14930:15200])
         movie_2 = st.selectbox('Second Option',title_list[25055:25255])
         movie_3 = st.selectbox('Third Option',title_list[21100:21200])
