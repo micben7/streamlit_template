@@ -10,7 +10,7 @@ from utils.data_loader import load_movie_titles
 
 
 # Data Loading
-#title_list = load_movie_titles('Data/CSV_Files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
+title_list = load_movie_titles('Data/CSV_Files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
 def main():
     
     st.title('Alltech Inc.🎈') 
@@ -43,8 +43,8 @@ def main():
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
         df = pd.DataFrame(
-            np.random.randn(5, 5),
-            columns=('col %d' % i for i in range(5))
+            np.random.randn(50, 20),
+            columns=('col %d' % i for i in range(20))
         ) 
         st.dataframe(df) 
         
