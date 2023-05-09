@@ -53,9 +53,9 @@ def main():
     # Text display section --->
     elif select == 'Horticulture':
         st.header('Insight from Horticulture Dataset')
-        choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
+        choice = st.selectbox("Select Market 👇", ["Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
-        if choice == 'Simple':
+        if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
             st.write('')
         elif choice == 'Markdown':
             st.markdown("st.markdown --> *example* of **markdown text**")
