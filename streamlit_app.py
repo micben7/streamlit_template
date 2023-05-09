@@ -164,9 +164,9 @@ def main():
     # Text display section --->
     elif select == 'About Us':
         st.header('About Us')
-        st.write("Alltech Inc. is an International company with headquarters in Nigeria and branches in South Africa,Kenya and Uk.")
-        st.write("Our team is made of Data Scientist, Data Engineers and UI team.")
-        st.write("Our Services includes but not limited to Data extraction, Data Cleaning, Data Processing and Model Building in solving real world problems.")
+        st.write("Welcome to ALL Tech Inc., a cutting-edge technology company founded in 2017. Our mission is to empower businesses and individuals to thrive in the digital age.")
+        st.write("At ALL Tech Inc., we believe that technology should be accessible to everyone, regardless of size or budget. That’s why we provide customized solutions that fit your unique needs and goals. With our team of experienced professionals, we stay up-to-date with the latest trends and innovations in the industry to ensure that we are always providing our clients with the best possible solutions.")
+        st.write("Thank you for choosing ALL Tech Inc. We look forward to working with you!.")
         st.header('Meet Our Team')
         c1, c2, c3 = st.columns(3)
         with c1:
