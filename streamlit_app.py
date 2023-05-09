@@ -10,7 +10,7 @@ from utils.data_loader import load_movie_titles
 
 
 # Data Loading
-title_list = load_movie_titles('Data/CSV files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
+title_list = load_movie_titles('Data/movies.csv')
 def main():
     
     st.title('Alltech Inc.🎈') 
@@ -83,9 +83,9 @@ def main():
        # select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
          # User-based preferences
         st.write('Insight from Horticulture Dataset')
-        movie_1 = st.selectbox('Select Market',title_list)
-        #movie_2 = st.selectbox('Select Product',title_list[25055:25255])
-        #movie_3 = st.selectbox('Select period',title_list[21100:21200])
+        movie_1 = st.selectbox('Select Market',title_list[14930:15200])
+        movie_2 = st.selectbox('Select Product',title_list[25055:25255])
+        movie_3 = st.selectbox('Select period',title_list[21100:21200])
         #fav_movies = [movie_1,movie_2,movie_3]
 
     ################################################################################################
