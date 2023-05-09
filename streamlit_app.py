@@ -10,7 +10,7 @@ from utils.data_loader import load_movie_titles
 
 
 # Data Loading
-title_list = load_movie_titles('Data/CSV_Files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
+#title_list = load_movie_titles('Data/CSV_Files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
 def main():
     
     st.title('Alltech Inc.🎈') 
