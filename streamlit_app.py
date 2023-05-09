@@ -77,8 +77,6 @@ def main():
             st.caption('This is a caption!')
         else:
             st.write('')
-        choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Code", "LaTex", "Caption"])
-    
             
         select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
