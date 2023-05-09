@@ -57,33 +57,33 @@ def main():
     ################################################################################################
     # Text display section --->
     elif select == 'Horticulture':
-        #st.header('Insight from Horticulture Dataset')
-       # choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
+        st.header('Insight from Horticulture Dataset')
+        choice = st.selectbox("Select Market 👇", ["Simple", "Markdown", "Subheader", "Code", "LaTex", "Caption"])
         
-       # if choice == 'Simple':
-        #    st.write('')
-        #elif choice == 'Markdown':
-         #   st.markdown("st.markdown --> *example* of **markdown text**")
-        #elif choice == 'Subheader':
-        #    st.subheader('st.subheader --> for writing subheadings!')
-        #elif choice == 'Code':
-        #    st.write('st.code example 👇')
-        #    st.code("console.log('Hello World');")
-        #elif choice == 'LaTex':
-        #    st.write('st.latex --> You can also write Math equations here! 🤓')
-        #    st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        #elif choice == 'Caption':
-        #    st.write('st.caption -->')
-         #   st.caption('This is a caption!')
-        #else:
-        #    st.write('')
+        if choice == 'Simple':
+            st.write('')
+        elif choice == 'Markdown':
+            st.markdown("st.markdown --> *example* of **markdown text**")
+        elif choice == 'Subheader':
+            st.subheader('st.subheader --> for writing subheadings!')
+        elif choice == 'Code':
+            st.write('st.code example 👇')
+            st.code("console.log('Hello World');")
+        elif choice == 'LaTex':
+            st.write('st.latex --> You can also write Math equations here! 🤓')
+            st.latex("(a + b)^2 = a^2 + 2ab + b^2")
+        elif choice == 'Caption':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        else:
+            st.write('')
             
         #select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
        # select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
          # User-based preferences
         st.write('Insight from Horticulture Dataset')
-        #movie_1 = st.selectbox('Select Market',title_list[14930:15200])
+        movie_1 = st.selectbox('Select Market',title_list)
         #movie_3 = st.selectbox('Select period',title_list[21100:21200])
         #fav_movies = [movie_1,movie_2,movie_3]
 
