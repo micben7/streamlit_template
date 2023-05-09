@@ -78,9 +78,9 @@ def main():
         else:
             st.write('')
             
-        #select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
 
-       # select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
          # User-based preferences
         #st.write('Insight from Horticulture Dataset')
         #movie_1 = st.selectbox('Select Market',title_list)
