@@ -43,7 +43,7 @@ def main():
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
         df = pd.DataFrame(
-            np.random.randn(30, 10),
+            np.random.randn(20, 10),
             columns=('col %d' % i for i in range(10))
         ) 
         st.dataframe(df) 
