@@ -10,7 +10,7 @@ from utils.data_loader import load_movie_titles
 
 
 # Data Loading
-itle_list = load_movie_titles('Data/CSV_Files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
+title_list = load_movie_titles('Data/CSV files/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined')
 def main():
     
     st.title('Alltech Inc.🎈') 
@@ -43,8 +43,8 @@ def main():
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
         df = pd.DataFrame(
-            np.random.randn(20, 10),
-            columns=('col %d' % i for i in range(10))
+            np.random.randn(50, 20),
+            columns=('col %d' % i for i in range(20))
         ) 
         st.dataframe(df) 
         
@@ -84,9 +84,9 @@ def main():
          # User-based preferences
         st.write('Insight from Horticulture Dataset')
         movie_1 = st.selectbox('Select Market',title_list)
-        movie_2 = st.selectbox('Select Product',title_list[25055:25255])
-        movie_3 = st.selectbox('Select period',title_list[21100:21200])
-        fav_movies = [movie_1,movie_2,movie_3]
+        #movie_2 = st.selectbox('Select Product',title_list[25055:25255])
+        #movie_3 = st.selectbox('Select period',title_list[21100:21200])
+        #fav_movies = [movie_1,movie_2,movie_3]
 
     ################################################################################################
     # Input data display section --->
