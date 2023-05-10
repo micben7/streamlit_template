@@ -76,7 +76,7 @@ def main():
         else:
             st.write('')
             
-        select_1 = st.selectbox("Select Product 👀", ["Home", "Livestock","Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Product 👀", ["Almonds", "Amadumbi","Apples"])
 
         select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
          # User-based preferences
