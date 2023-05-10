@@ -42,7 +42,7 @@ def main():
         st.header('Insights from Livestock Dataset')
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
-        df = pd.read_csv("Data/CSV_Files/new_cattles.csv") 
+        df = pd.read_csv("Data/CSV_Files/new_pigs.csv") 
         st.write(df) 
         
         st.header('Displaying Some Charts 📊')
@@ -53,12 +53,14 @@ def main():
     # Text display section --->
     elif select == 'Horticulture':
         st.header('Insight from Horticulture Dataset')
-        choice = st.selectbox("Select Market 👇", ["Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined", "Durban_Fresh_Produce_Market_(DUR)_combined", "East_London_Fresh_Produce_Market_(EAS)_combined", "George_Fresh_Produce_Market_(GEO)_combined", "Johannesburg_Fresh_Produce_Market_(JOH)_combined", "Kimberley_(Sol_Plaatje)_Fresh_Produce_Market_(KIM)_combined", "Klerksdorp_Fresh_Produce_Market_(KLE)_combined", "Mpumalanga_Fresh_Produce_Market_(NEA)_combined", "Mthatha_(Kei)_Fresh_Produce_Market_(UMT)_combined", "Nelspruit_Fresh_Produce_Market_(NEL)_combined", "Pietermaritzburg_Fresh_Produce_Market_(PIE)_combined", "LaTex", "LaTex", "LaTex", "Caption"])
+        choice = st.selectbox("Select Market 👇", ["Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined", "new_pigs", "George_Fresh_Produce_Market_(GEO)_combined", "Johannesburg_Fresh_Produce_Market_(JOH)_combined", "Kimberley_(Sol_Plaatje)_Fresh_Produce_Market_(KIM)_combined", "Klerksdorp_Fresh_Produce_Market_(KLE)_combined", "Mpumalanga_Fresh_Produce_Market_(NEA)_combined", "Mthatha_(Kei)_Fresh_Produce_Market_(UMT)_combined", "Nelspruit_Fresh_Produce_Market_(NEL)_combined", "Pietermaritzburg_Fresh_Produce_Market_(PIE)_combined","Caption"])
         
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
             st.write('')
-        elif choice == 'Markdown':
-            st.markdown("st.markdown --> *example* of **markdown text**")
+        elif choice == 'new_pigs':
+            # generates random numeric values!
+             df = pd.read_csv("Data/CSV_Files/new_pigs.csv") 
+             st.write(df)
         elif choice == 'Subheader':
             st.subheader('st.subheader --> for writing subheadings!')
         elif choice == 'Code':
