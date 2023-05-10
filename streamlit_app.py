@@ -78,7 +78,7 @@ def main():
             
         select_1 = st.selectbox("Select Product 👀", ["Almonds", "Amadumbi","Apples"])
 
-        select_1 = st.selectbox("Select Product 👀", ["Home", "Horticulture","About Us", "Ratings 📷"])
+        select_1 = st.selectbox("Select Period 👀", ["Last 7 days", "Last 15 days","Last 30 days", "Last 60 days"])
          # User-based preferences
         #st.write('Insight from Horticulture Dataset')
         #movie_1 = st.selectbox('Select Market',title_list)
