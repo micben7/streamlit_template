@@ -79,8 +79,15 @@ def main():
         select_1 = st.selectbox("Select Product 👀", ["Almonds", "Amadumbi","Apples"])
 
         select_1 = st.selectbox("Select Period 👀", ["Last 7 days", "Last 15 days","Last 30 days", "Last 60 days"])
-        st.button("Get Price Insight"):
         
+        if st.button('Streamlit Challenge 🏁'):
+        st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
+        st.markdown("""**CHALLENGE TRANSLATIONS**
+                    \n1. [French](https://30days-in-french.streamlitapp.com/) by [Charly Wargnier](https://twitter.com/DataChaz)
+                    \n2. [Portuguese](https://share.streamlit.io/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)""")
+    else:
+        st.write('If you\'re interested to learn more, then you should definitely try the above *Challenge!* 👆')
+
          # User-based preferences
         #st.write('Insight from Horticulture Dataset')
         #movie_1 = st.selectbox('Select Market',title_list)
