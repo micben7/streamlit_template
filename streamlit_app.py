@@ -83,7 +83,7 @@ def main():
         if st.button('Get Insight 🏁'):
             
               logo = Image.open("pics/highest.PNG")
-              st.image(logo, width=800)
+              st.image(logo, width=600)
             
              
          
