@@ -85,7 +85,7 @@ def main():
             st.markdown("""**CHALLENGE TRANSLATIONS**
                     \n1. [French](https://30days-in-french.streamlitapp.com/) by [Charly Wargnier](https://twitter.com/DataChaz)
                     \n2. [Portuguese](https://share.streamlit.io/franciscoed/30days) by [franciscoed](https://github.com/franciscoed)""")
-    else:
+        else:
         st.write('If you\'re interested to learn more, then you should definitely try the above *Challenge!* 👆')
 
          # User-based preferences
