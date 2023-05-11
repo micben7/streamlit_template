@@ -83,9 +83,7 @@ def main():
         if st.button('Get Price Insight 🏁'):
             st.info('Check out 👉 [#30DaysofStreamlit](https://share.streamlit.io/streamlit/30days?challenge=Day+1)')
              
-        else:
-            st.write('If you\'re interested to learn more, then you should definitely try the above *Challenge!* 👆')
-
+         
          # User-based preferences
         #st.write('Insight from Horticulture Dataset')
         #movie_1 = st.selectbox('Select Market',title_list)
