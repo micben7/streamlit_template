@@ -81,7 +81,7 @@ def main():
         select_1 = st.selectbox("Select Period 👀", ["Last 7 days", "Last 15 days","Last 30 days", "Last 60 days"])
 
         if st.button('Get Price Insight 🏁'):
-            st.info('Check out 👉 ')
+            st.info('')
              
          
          # User-based preferences
