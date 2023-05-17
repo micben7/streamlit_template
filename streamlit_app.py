@@ -42,7 +42,7 @@ def main():
         st.header('Insights from Livestock Dataset')
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
-        df = pd.read_xlsx("Data/cattles_processed.xlsx") 
+        df = pd.read_xlsx("cattles_processed.xlsx") 
         st.table(df) 
         
         st.header('Displaying Some Charts 📊')
@@ -60,7 +60,7 @@ def main():
             st.write('')
         elif choice == 'new_pigs':
             # generates random numeric values!
-             df = pd.read_csv("Data/CSV_Files/new_pigs.csv") 
+             df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx") 
              st.write(df)
         elif choice == 'Subheader':
             st.subheader('st.subheader --> for writing subheadings!')
