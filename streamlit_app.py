@@ -42,7 +42,7 @@ def main():
         st.header('Insights from Livestock Dataset')
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
-        df = pd.read_xlsx("cattles_processed.xlsx") 
+        df = pd.read_xlsx("Data/cattles_processed.xlsx") 
         st.table(df) 
         
         st.header('Displaying Some Charts 📊')
@@ -57,7 +57,7 @@ def main():
 ])
         
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
-            st.write('')
+            st.write("Data/CSV_Files/pigs_processed.xlsx")
         elif choice == 'new_pigs':
             # generates random numeric values!
              df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx") 
