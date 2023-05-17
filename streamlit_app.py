@@ -29,9 +29,7 @@ def main():
         st.image(logo, width=200)
         st.header("Price Insight App✨")
         select = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
-        
          
-    
         st.write('Bringing you the best of insights')
 
     
