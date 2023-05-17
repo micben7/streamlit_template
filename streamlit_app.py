@@ -61,7 +61,7 @@ def main():
             st.write(df)
         elif choice == 'Cape Town Fresh Produce Market(CAP)':
             # generates random numeric values!
-             df = pd.read_xlsx("Data/pigs.csv")
+             df = pd.read_csv("Data/pigs.csv")
              
              st.write(df)
         elif choice == 'Subheader':
