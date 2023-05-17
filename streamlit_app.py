@@ -57,10 +57,12 @@ def main():
 ])
         
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
-            st.write("Data/pigs_processed.csv")
+            df = pd.read_xlsx("Data/pigs_processed.csv") 
+            st.write(df)
         elif choice == 'new_pigs':
             # generates random numeric values!
-             df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx") 
+             df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx")
+             
              st.write(df)
         elif choice == 'Subheader':
             st.subheader('st.subheader --> for writing subheadings!')
