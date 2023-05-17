@@ -211,9 +211,8 @@ def main():
     ##st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
     ################################################################################################
     # Media display section --->
-        st.header("Get In Touch With Us") 
     elif select == 'Ratings 📷':
-
+        st.header("Get In Touch With Us") 
         ##place logo on top left corner of navigation bar###
         st.cache(allow_output_mutation=True)
         def get_base64_of_bin_file(png_file):
