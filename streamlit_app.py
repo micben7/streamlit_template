@@ -38,14 +38,24 @@ def main():
 
     ################################################################################################
     # Data and Charts elements section --->
-    if select == 'Livestock':
-        st.header('Insights from Livestock Dataset')
-        st.write('Insights from Livestock Dataset')
-        # generates random numeric values!
-        df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
-        st.write(df)
-        
-        st.header('Displaying Some Charts 📊')
+        if select == 'Livestock':
+            st.write('Insights from Livestock Dataset')
+            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            st.write(df)
+
+            st.write('Insights from Livestock Dataset')
+            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            st.write(df)
+
+            st.write('Insights from Livestock Dataset')
+            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            st.write(df)
+
+            st.write('Insights from Livestock Dataset')
+            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            st.write(df)
+            
+            st.header('Displaying Some Charts 📊')
         
                 
 
@@ -63,19 +73,58 @@ def main():
              df = pd.read_xlsx("Data/pigs.csv")
              
              st.write(df)
-        elif choice == 'Subheader':
+        elif choice == 'East London Fresh Produce Market (EAS)':
             st.subheader('st.subheader --> for writing subheadings!')
-        elif choice == 'Code':
+        elif choice == 'Durban Fresh Produce Market(DUR)':
             st.write('st.code example 👇')
             st.code("console.log('Hello World');")
-        elif choice == 'LaTex':
+        elif choice == 'George_Fresh_Produce_Market_(GEO)_combined':
             st.write('st.latex --> You can also write Math equations here! 🤓')
             st.latex("(a + b)^2 = a^2 + 2ab + b^2")
-        elif choice == 'Caption':
+        elif choice == 'Johannesburg_Fresh_Produce_Market_(JOH)_combined':
             st.write('st.caption -->')
             st.caption('This is a caption!')
+        elif choice == 'Kimberley_(Sol_Plaatje)_Fresh_Produce_Market_(KIM)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Klerksdorp_Fresh_Produce_Market_(KLE)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Mpumalanga_Fresh_Produce_Market_(NEA)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Mthatha_(Kei)_Fresh_Produce_Market_(UMT)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Nelspruit_Fresh_Produce_Market_(NEL)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Pietermaritzburg_Fresh_Produce_Market_(PIE)_combined':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Port Elizabeth Fresh Produce Market (POR)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+        elif choice == 'Springs Fresh Produce Market(SPR)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')
+            
+        elif choice == 'Tshwane Fresh Produce Market(PRE)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!')   
+        elif choice == 'Vereeniging Fresh Produce Market (VER)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!') 
+        elif choice == 'Welkom (Matjhabeng) Fresh Produce Market (WEL)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!') 
+        elif choice == 'Witbank Fresh Produce Market (WIT)':
+            st.write('st.caption -->')
+            st.caption('This is a caption!') 
+
+
         else:
-            st.write('')
+            st.write('Kimberley_(Sol_Plaatje)_Fresh_Produce_Market_(KIM)_combined"')
             
         select_1 = st.selectbox("Select Product 👀", ["Almonds", "Amadumbi","Apples"])
 
