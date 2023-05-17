@@ -7,12 +7,26 @@ from vega_datasets import data
 from PIL import Image
 
 from utils.data_loader import load_movie_titles
-
-
-
-
-import streamlit as st
 import streamlit_authenticator as stauth
+
+
+
+#################################################################################################
+
+# Data Loading
+#title_list = load_movie_titles('Data/CSV files/movies.csv')
+def main():
+    
+    st.title('Alltech Inc.🎈') 
+    
+
+    with st.expander("About this App"):
+        st.write("""
+            This web application leverages the datasets to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
+        """)
+
+
+
 
 def login():
     names = ['Join Prime','Join Walmart plus']
@@ -32,19 +46,12 @@ def login():
         st.warning('Please enter your username and password')
         
 
-    #################################################################################################
+if __name__ == "__main__":
+    main()
 
-# Data Loading
-#title_list = load_movie_titles('Data/CSV files/movies.csv')
-def main():
-    
-    st.title('Alltech Inc.🎈') 
-    
 
-    with st.expander("About this App"):
-        st.write("""
-            This web application leverages the datasets to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
-        """)
+
+
 
 
     #################################################################################################
