@@ -57,7 +57,7 @@ def main():
 ])
         
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
-            st.write("Data/CSV_Files/pigs_processed.xlsx")
+            st.write("Data/pigs_processed.csv")
         elif choice == 'new_pigs':
             # generates random numeric values!
              df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx") 
