@@ -42,7 +42,7 @@ def main():
         st.header('Insights from Livestock Dataset')
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
-        df = pd.read_csv('Data/cattles_processed.csv') 
+        df = pd.read_csv('Data/Durban_processed.csv') 
         st.table(df) 
         
         st.header('Displaying Some Charts 📊')
