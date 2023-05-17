@@ -212,6 +212,7 @@ def main():
     ################################################################################################
     # Media display section --->
         st.header("Get In Touch With Us") 
+    elif select == 'Ratings 📷':
 
         ##place logo on top left corner of navigation bar###
         st.cache(allow_output_mutation=True)
