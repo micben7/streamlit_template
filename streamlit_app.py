@@ -42,8 +42,8 @@ def main():
         st.header('Insights from Livestock Dataset')
         st.write('Insights from Livestock Dataset')
         # generates random numeric values!
-        df = pd.read_csv('Data/Durban_processed.csv') 
-        st.table(df) 
+        df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+        st.write(df)
         
         st.header('Displaying Some Charts 📊')
         
@@ -55,13 +55,12 @@ def main():
         st.header('Insight from Horticulture Dataset')
         choice = st.selectbox("Select Market 👇", ["Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined","Cape Town Fresh Produce Market(CAP)", "East London Fresh Produce Market (EAS)", "Durban Fresh Produce Market(DUR)", "George_Fresh_Produce_Market_(GEO)_combined", "Johannesburg_Fresh_Produce_Market_(JOH)_combined", "Kimberley_(Sol_Plaatje)_Fresh_Produce_Market_(KIM)_combined", "Klerksdorp_Fresh_Produce_Market_(KLE)_combined", "Mpumalanga_Fresh_Produce_Market_(NEA)_combined", "Mthatha_(Kei)_Fresh_Produce_Market_(UMT)_combined", "Nelspruit_Fresh_Produce_Market_(NEL)_combined", "Pietermaritzburg_Fresh_Produce_Market_(PIE)_combined","Port Elizabeth Fresh Produce Market (POR)","Springs Fresh Produce Market(SPR)","Tshwane Fresh Produce Market(PRE)", "Vereeniging Fresh Produce Market (VER)", "Welkom (Matjhabeng) Fresh Produce Market (WEL)", "Witbank Fresh Produce Market (WIT)" 
 ])
-        
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
-            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
-            st.write(df)
+           df = pd.read_csv('Data/Durban_processed.csv') 
+           st.table(df) 
         elif choice == 'Cape Town Fresh Produce Market(CAP)':
             # generates random numeric values!
-             df = pd.read_csv("Data/pigs.csv")
+             df = pd.read_xlsx("Data/pigs.csv")
              
              st.write(df)
         elif choice == 'Subheader':
