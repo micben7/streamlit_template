@@ -29,7 +29,9 @@ def main():
         st.image(logo, width=200)
         st.header("Price Insight App✨")
         select = st.selectbox("Explore Categories 👀", ["Home", "Livestock","Horticulture", "Grain","About Us", "Ratings 📷"])
+        
          
+    
         st.write('Bringing you the best of insights')
 
     
@@ -210,105 +212,30 @@ def main():
     ################################################################################################
     # Media display section --->
     elif select == 'Ratings 📷':
-        st.header("Get In Touch With Us") 
-        ##place logo on top left corner of navigation bar###
-        st.cache(allow_output_mutation=True)
-        def get_base64_of_bin_file(png_file):
-            with open(png_file, "rb") as f:
-                data = f.read()
-            return base64.b64encode(data).decode()
+        st.header('You can embed Images, Videos & Audio files all at one place! 😉')
+        st.subheader('st.image')
 
-
-        def build_markup_for_logo(
-            png_file,
-            background_position="0% 0%",
-            margin_top="10%",
-            image_width="40%",
-            image_height="45%",
-        ):
-            binary_string = get_base64_of_bin_file(png_file)
-            return """
-                    <style>
-                        [data-testid="stSidebarNav"] {
-                            background-image: url("data:image/png;base64,%s");
-                            background-repeat: no-repeat;
-                            background-position: %s;
-                            margin-top: %s;
-                            background-size: %s %s;
-                        }
-                    </style>
-                    """ % (
-                binary_string,
-                background_position,
-                margin_top,
-                image_width,
-                image_height,
-            )
-
-
-        def add_logo(png_file):
-            logo_markup = build_markup_for_logo(png_file)
-            st.markdown(
-                logo_markup,
-                unsafe_allow_html=True,
-            )
-
-        add_logo("pics/logo.png")
-
-        ##load lotties from url onto contact page###
-        def load_lottieurl(url: str):
-            r = requests.get(url)
-            if r.status_code != 200:
-                return None
-            return r.json()
-
-            
-        lottie_1 = load_lottieurl("https://assets1.lottiefiles.com/private_files/lf30_kxkxycqz.json")
-        lottie_2 = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_IBo4XKYgE3.json")
-        lottie_3 = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_dd9wpbrh.json")
-
-
-        c1, c2, c3 = st.columns(3)
+        c1, c2 = st.columns(2)
         with c1:
-            st_lottie(lottie_1,
-                    width=90)
-            st.write("123 Lagos Nigeria")
-            
+            st.image('https://blog.streamlit.io/content/images/size/w2000/2022/03/snowflake_streamlit-1.gif', width=300)
+            st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
         with c2:
-            st_lottie(lottie_2,
-                    width=90)
-            st.write("012345678")
-            
-        with c3:
-            st_lottie(lottie_3,
-                    width=90)
-            st.write("info@all-tech.org")
-            
-        st.markdown("###") #adjusting for space between 
-        st.markdown("###")
-        st.markdown("###")
+            st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
+            st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
+        st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')
 
-        ###sert message us section###
-        st.header(":mailbox: Write To Us!")
+        st.subheader('st.video')
+        st.video('https://www.youtube.com/watch?v=fVsONlc3OUY')
 
-        contact_form = """
-        <form action="https://formsubmit.co/mbuyiselom94@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message Here"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        """
-
-        st.markdown(contact_form, unsafe_allow_html=True)
-
-        #use local css file
-        def local_css(File_name):
-            with open(File_name) as f:
-                st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-                
-        local_css("style/style.css")
-
+        st.subheader('st.audio')
+        audio_file = open('demo.mp3', 'rb')
+        audio_bytes = audio_file.read()
+        st.audio(audio_bytes, format='audio/mp3')
+        st.write("""Audio Info :
+                \n- *Genre* -- Holidays & Christmas, Worship
+                \n- *Mood* -- Relaxed, Patient, Respectful, Subdued.
+                \n- *Instruments* -- Acoustic Guitar, Flute
+                \n- *Downloaded from* -- https://www.videvo.net/royalty-free-music/sort/popular/instrument/flute/""")
 # Required to let Streamlit instantiate our web app.  
 if __name__ == '__main__':
     main()
