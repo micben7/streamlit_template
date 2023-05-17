@@ -7,11 +7,7 @@ from vega_datasets import data
 from PIL import Image
 
 from utils.data_loader import load_movie_titles
-import streamlit_authenticator as stauth
 
-
-
-#################################################################################################
 
 # Data Loading
 #title_list = load_movie_titles('Data/CSV files/movies.csv')
@@ -24,34 +20,6 @@ def main():
         st.write("""
             This web application leverages the datasets to unpack key insights and trends to be used by buyers (e.g. retailers) and sellers (farmers) to set and negotiate their price on a given day. 😉
         """)
-
-
-
-
-def login():
-    names = ['Join Prime','Join Walmart plus']
-    usernames = ['amazon','walmart']
-    passwords = ['amazonpay','phonepe']
-    hashed_passwords = stauth.Hasher(passwords).generate()
-    authenticator = stauth.Authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
-    name, authentication_status, username = authenticator.login('Login', 'main')
-        
-    if st.session_state["authentication_status"]:
-        test=authenticator.logout('Logout', 'main')
-        st.write(f'Welcome *{st.session_state["name"]}*')
-        st.title('Some content')
-    elif st.session_state["authentication_status"] == False:
-        st.error('Username/password is incorrect')
-    elif st.session_state["authentication_status"] == None:
-        st.warning('Please enter your username and password')
-        
-
-if __name__ == "__main__":
-    main()
-
-
-
-
 
 
     #################################################################################################
@@ -89,7 +57,7 @@ if __name__ == "__main__":
 ])
         
         if choice == 'Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined':
-            st.write("Data/pigs_processed.xlsx")
+            st.write("Data/CSV_Files/pigs_processed.xlsx")
         elif choice == 'new_pigs':
             # generates random numeric values!
              df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx") 
