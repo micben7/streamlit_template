@@ -61,7 +61,7 @@ def main():
             st.write(df)
         elif choice == 'new_pigs':
             # generates random numeric values!
-             df = pd.read_xlsx("Data/CSV_Files/pigs_processed.xlsx")
+             df = pd.read_xlsx("Data/pigs.csv")
              
              st.write(df)
         elif choice == 'Subheader':
