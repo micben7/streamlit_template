@@ -40,7 +40,7 @@ def main():
     # Data and Charts elements section --->
     if select == 'Livestock':
         st.write('Insights from Livestock Dataset')
-        choice = st.selectbox("Select Market 👇", ["Cattle","Sheep", "Lamp"])
+        choice = st.selectbox("Select Market 👇", ["Cattle","Sheep", "Lamp","Pig"])
         if choice == 'Cattle':
             
             df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
