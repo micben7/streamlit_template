@@ -43,7 +43,7 @@ def main():
         choice = st.selectbox("Select Market 👇", ["Cattle","Sheep", "Lamp","Pig"])
         if choice == 'Cattle':
             
-            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            df = pd.read_csv('Data/cattles_processed.csv') 
             st.write(df)
         elif choice == 'Sheep':        
             
