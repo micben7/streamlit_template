@@ -8,7 +8,6 @@ from PIL import Image
 import json
 import requests
 from PIL import Image
-from streamlit_lottie import st_lottie
 from utils.data_loader import load_movie_titles
 
 
