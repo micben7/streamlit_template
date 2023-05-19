@@ -5,7 +5,10 @@ import numpy as np
 import altair as alt
 from vega_datasets import data
 from PIL import Image
-
+import json
+import requests
+from PIL import Image
+from streamlit_lottie import st_lottie
 from utils.data_loader import load_movie_titles
 
 
@@ -13,7 +16,7 @@ from utils.data_loader import load_movie_titles
 #title_list = load_movie_titles('Data/CSV files/movies.csv')
 def main():
     
-    ##st.title('Alltech Inc.🎈') 
+    st.title('Alltech Inc.🎈') 
     
 
     with st.expander("About this App"):
@@ -269,13 +272,8 @@ def main():
     ################################################################################################
     # Media display section --->
     elif select == 'Ratings 📷':
-            import streamlit as st
-    import json
-    import requests
-    from PIL import Image
-    from streamlit_lottie import st_lottie
-
-    st.header("Get In Touch With Us") 
+    
+         st.header("Get In Touch With Us") 
 
     #def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
