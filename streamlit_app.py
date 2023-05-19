@@ -46,8 +46,7 @@ def main():
             df = pd.read_csv('Data/cattles_processed.csv') 
             st.write(df)
         elif choice == 'Sheep':        
-            
- 
+             
             st.write('Insights from Livestock Dataset')
             df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
             st.write(df)
@@ -60,7 +59,7 @@ def main():
         elif choice == 'Pigs':
 
             st.write('Insights from Livestock Dataset')
-            df = pd.read_csv('Data/Bloemfontein_(Mangaung)_Fresh_Produce_Market_(BLO)_combined.csv') 
+            df = pd.read_csv('Data/pigs.csv') 
             st.write(df)
             
         st.header('Displaying Some Charts 📊')
@@ -270,30 +269,71 @@ def main():
     ################################################################################################
     # Media display section --->
     elif select == 'Ratings 📷':
-        st.header('You can embed Images, Videos & Audio files all at one place! 😉')
-        st.subheader('st.image')
+            import streamlit as st
+    import json
+    import requests
+    from PIL import Image
+    from streamlit_lottie import st_lottie
 
-        c1, c2 = st.columns(2)
-        with c1:
-            st.image('https://blog.streamlit.io/content/images/size/w2000/2022/03/snowflake_streamlit-1.gif', width=300)
-            st.image('https://www.scoopbyte.com/wp-content/uploads/2019/12/tom-and-jerry.jpg', width=300)
-        with c2:
-            st.image('https://im.indiatimes.in/media/content/itimes/blog/2014/Jul/9/1404917161_mickey+mouse.jpg', width=200)
-            st.image('https://images6.fanpop.com/image/polls/1578000/1578435_1470083461280_full.jpg' ,width=250)
-        st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')
+    st.header("Get In Touch With Us") 
 
-        st.subheader('st.video')
-        st.video('https://www.youtube.com/watch?v=fVsONlc3OUY')
+    def load_lottiefile(filepath: str):
+        with open(filepath, "r") as f:
+            return json.load(f)
+        
+    def load_lottieurl(url: str):
+        r = requests.get(url)
+        if r.status_code != 200:
+            return None
+        return r.json()    
+        
+    lottie_1 = load_lottieurl("https://assets3.lottiefiles.com/private_files/lf30_kxkxycqz.json")
+    lottie_2 = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_IBo4XKYgE3.json")
+    lottie_3 = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_dd9wpbrh.json")
 
-        st.subheader('st.audio')
-        audio_file = open('demo.mp3', 'rb')
-        audio_bytes = audio_file.read()
-        st.audio(audio_bytes, format='audio/mp3')
-        st.write("""Audio Info :
-                \n- *Genre* -- Holidays & Christmas, Worship
-                \n- *Mood* -- Relaxed, Patient, Respectful, Subdued.
-                \n- *Instruments* -- Acoustic Guitar, Flute
-                \n- *Downloaded from* -- https://www.videvo.net/royalty-free-music/sort/popular/instrument/flute/""")
+
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        st_lottie(lottie_1,
+                width=90)
+        st.write("123 Lagos Nigeria")
+        
+    with c2:
+        st_lottie(lottie_2,
+                width=90)
+        st.write("012345678")
+        
+    with c3:
+        st_lottie(lottie_3,
+                width=90)
+        st.write("info@all-tech.org")
+        
+    st.markdown("###") #adjusting for space between 
+    st.markdown("###")
+    st.markdown("###")
+
+    #insert message us section#
+
+
+    st.header(":mailbox: Write To Us!")
+
+    contact_form = """
+    <form action="https://formsubmit.co/mbuyiselom94@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message Here"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    """
+
+    st.markdown(contact_form, unsafe_allow_html=True)
+
+    #use local css file
+    def local_css(File_name):
+        with open(File_name) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+            
+local_css("style/style.css")
 # Required to let Streamlit instantiate our web app.  
 if __name__ == '__main__':
     main()
