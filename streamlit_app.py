@@ -277,8 +277,8 @@ def main():
 
     st.header("Get In Touch With Us") 
 
-    def load_lottiefile(filepath: str):
-        with open(filepath, "r") as f:
+    #def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
             return json.load(f)
         
     def load_lottieurl(url: str):
@@ -310,7 +310,7 @@ def main():
         
     st.markdown("###") #adjusting for space between 
     st.markdown("###")
-    st.markdown("###")
+    st.markdown("###")##
 
     #insert message us section#
 
@@ -333,7 +333,7 @@ def main():
         with open(File_name) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
             
-local_css("style/style.css")
+    local_css("style/style.css")
 # Required to let Streamlit instantiate our web app.  
 if __name__ == '__main__':
     main()
