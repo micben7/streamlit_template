@@ -13,7 +13,7 @@ from utils.data_loader import load_movie_titles
 #title_list = load_movie_titles('Data/CSV files/movies.csv')
 def main():
     
-    st.title('Alltech Inc.🎈') 
+    ##st.title('Alltech Inc.🎈') 
     
 
     with st.expander("About this App"):
