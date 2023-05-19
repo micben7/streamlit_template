@@ -336,6 +336,6 @@ def main():
     local_css("style/style.css")
 # Required to let Streamlit instantiate our web app.  
 if __name__ == '__main__':
-    main()
+  main()
 
   
