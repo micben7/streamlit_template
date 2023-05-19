@@ -271,67 +271,7 @@ def main():
     ##st.caption('You can add images filepath using both online links (like above 👆) & from your hard disk!')    
     ################################################################################################
     # Media display section --->
-    elif select == 'Ratings 📷':
-    
-         st.header("Get In Touch With Us") 
-
-    #def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-            return json.load(f)
-        
-    def load_lottieurl(url: str):
-        r = requests.get(url)
-        if r.status_code != 200:
-            return None
-        return r.json()    
-        
-    lottie_1 = load_lottieurl("https://assets3.lottiefiles.com/private_files/lf30_kxkxycqz.json")
-    lottie_2 = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_IBo4XKYgE3.json")
-    lottie_3 = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_dd9wpbrh.json")
-
-
-    c1, c2, c3 = st.columns(3)
-    with c1:
-        st_lottie(lottie_1,
-                width=90)
-        st.write("123 Lagos Nigeria")
-        
-    with c2:
-        st_lottie(lottie_2,
-                width=90)
-        st.write("012345678")
-        
-    with c3:
-        st_lottie(lottie_3,
-                width=90)
-        st.write("info@all-tech.org")
-        
-    st.markdown("###") #adjusting for space between 
-    st.markdown("###")
-    st.markdown("###")##
-
-    #insert message us section#
-
-
-    st.header(":mailbox: Write To Us!")
-
-    contact_form = """
-    <form action="https://formsubmit.co/mbuyiselom94@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message Here"></textarea>
-        <button type="submit">Send</button>
-    </form>
-    """
-
-    st.markdown(contact_form, unsafe_allow_html=True)
-
-    #use local css file
-    def local_css(File_name):
-        with open(File_name) as f:
-            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-            
-    local_css("style/style.css")
+     
 # Required to let Streamlit instantiate our web app.  
 if __name__ == '__main__':
   main()
